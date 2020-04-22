@@ -152,10 +152,6 @@ def create_app(test_config=None):
             "message": "method not allowed"
         }), 405
 
-    
-  # TEST: Practice writing curl requests. Write some requests that you know will error in expected ways.
-  #       Make sure they are returning as expected. Do the same for other misformatted requests or requests missing data.
-  #       If you find any error responses returning as HTML, write new error handlers for them. 
 
   return app
 
