@@ -1,4 +1,9 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-.vscode
+
+
+
+# Ignoring directories
+# Both the directory itself and its contents will be ignored.
+.vscode/
