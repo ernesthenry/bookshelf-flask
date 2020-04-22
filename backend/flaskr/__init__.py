@@ -128,6 +128,14 @@ def create_app(test_config=None):
         }), 404
 
     
+    @app.errorhandler(400)
+    def bad_request(error):
+        return jsonify({
+            "success": False,
+            "error": 400,
+            "message": "Bad Request"
+        }), 400
+
     @app.errorhandler(422)
     def unprocessable(error):
         return jsonify({
@@ -135,6 +143,14 @@ def create_app(test_config=None):
             "error": 422,
             "message": "unprocessable"
         }), 422
+
+    @app.errorhandler(405)
+    def not_allowed(error):
+        return jsonify({
+            "success": False,
+            "error": 405,
+            "message": "method not allowed"
+        }), 405
 
     
   # TEST: Practice writing curl requests. Write some requests that you know will error in expected ways.
