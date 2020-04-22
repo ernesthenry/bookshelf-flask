@@ -2,8 +2,6 @@
 __pycache__/
 *.py[cod]
 
-
-
 # Ignoring directories
 # Both the directory itself and its contents will be ignored.
 .vscode/
