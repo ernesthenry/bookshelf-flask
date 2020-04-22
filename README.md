@@ -1,1 +1,1 @@
-## Bookshelf App built using Flask
+## Bookshelf app built using Flask. We are using API end points t o communicate to our front end
